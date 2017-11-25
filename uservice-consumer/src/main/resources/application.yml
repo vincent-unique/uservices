@@ -1,0 +1,14 @@
+server:
+  port: 12315
+  context-path: /consumer
+uservice:
+  producer:
+    url: http://127.0.0.1:1024/producer
+    description: producing service
+hystrix:
+  metrics:
+    enabled: true
+    polling-interval-ms: 2000
+management:
+  security:
+    enabled: false
