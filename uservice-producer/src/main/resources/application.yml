@@ -1,0 +1,13 @@
+server:
+  port: 1024
+  context-path: /producer
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:demo;DB_CLOSE_DELAY=-1
+    username: root
+    password: root
+    sql-script-encoding: utf-8
+management:
+  security:
+    enabled: false
